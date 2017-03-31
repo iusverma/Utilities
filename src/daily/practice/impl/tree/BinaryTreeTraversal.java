@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeTraversal {
+    static int maxCount = 1;
     public static void traverseInorder(BinaryTreeNode current){
         if(current!=null){
             traverseInorder(current.getLeftChild());
@@ -47,6 +48,7 @@ public class BinaryTreeTraversal {
         List<Integer> pathElements = new ArrayList<>();
         int count = 1;
         getMaxDistinctNumberInAPath(t, pathElements, count);
+        System.out.print("Maximum count of distinct number in tree: " +maxCount);
     }
     private static void getMaxDistinctNumberInAPath(BinaryTreeNode t, List<Integer> pathElements, int count){
         List<Integer> tempPathElements = new ArrayList<>(pathElements);
@@ -62,9 +64,12 @@ public class BinaryTreeTraversal {
                     System.out.print(tempPathElements.get(i)+", ");
                 }
                 System.out.println("==>>"+count);
+                if(maxCount < count){
+                    maxCount = count;
+                }
             }
-            getMaxDistinctNumberInAPath(t.getLeftChild(), tempPathElements, tempCount );
-            getMaxDistinctNumberInAPath(t.getRightChild(), tempPathElements, tempCount );
+            getMaxDistinctNumberInAPath(t.getLeftChild(), tempPathElements, tempCount);
+            getMaxDistinctNumberInAPath(t.getRightChild(), tempPathElements, tempCount);
         }
     }
 }
