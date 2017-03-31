@@ -8,13 +8,20 @@ public class StringParse1 {
     List<String> listOfValidStrings = new ArrayList<>();
     List<String> listOfAllPossiblePasswordSubstrings = new ArrayList<>();
     List<String> listOfPasswords = new ArrayList<>();
-    
+
+    private void init(){
+        listOfSubStrings.clear();
+        listOfValidStrings.clear();
+        listOfAllPossiblePasswordSubstrings.clear();
+        listOfPasswords.clear();
+    }
+
     String substrwithoutDigit = "";
     public int solution(String S) {
      // write your code in Java SE 8
      // Step 1: Identify all substring which exist between digits
-    listOfPasswords.clear();
-     for(int i=0;i<S.length();i++){
+    init();
+    for(int i=0;i<S.length();i++){
          String str = S.substring(i, i+1);
          int num = -1;
          try{
@@ -65,6 +72,7 @@ public class StringParse1 {
                  char substr = str.charAt(index);
                  if(Character.isUpperCase(substr)){
                      validString = true;
+                     break;
                  }
              }
              if(validString && !list.contains(str)){
@@ -84,7 +92,7 @@ public class StringParse1 {
             String str = listOfValidStrings.get(i);
             System.out.println("Parseing: "+str);
             for(int j=0;j<str.length();j++){
-                for(int k=j+1;k<str.length();k++){
+                for(int k=j+1;k<=str.length();k++){
                     String pwd = str.substring(j, k);
                     System.out.println("substring:" +pwd);
                     if(!listOfAllPossiblePasswordSubstrings.contains(pwd)){
