@@ -1,4 +1,4 @@
-//package daily.practice.impl.misc;
+package daily.practice.impl.misc;
 
 public class EquilibiriumPoint1{
 

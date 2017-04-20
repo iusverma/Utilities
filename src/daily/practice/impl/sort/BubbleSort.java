@@ -1,3 +1,5 @@
+package daily.practice.impl.sort;
+
 class BubbleSort{
 	public static void sort(int []arr){
 		int length = arr.length;

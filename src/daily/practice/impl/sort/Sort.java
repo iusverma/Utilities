@@ -1,4 +1,6 @@
+package daily.practice.impl.sort;
+
 public interface Sort{
 	public void sort(int []arr);
-	protected void swap(Integer num1, Integer Num2);
+	public void swap(Integer num1, Integer Num2);
 }
