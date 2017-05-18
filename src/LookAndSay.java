@@ -1,4 +1,4 @@
-package daily.practice.impl.misc;
+//package atlasin.online;
 
 /**
  * Class - https://en.wikipedia.org/wiki/Look-and-say_sequence
