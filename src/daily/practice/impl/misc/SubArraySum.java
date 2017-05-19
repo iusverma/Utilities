@@ -1,3 +1,5 @@
+package daily.practice.impl.misc;
+
 import java.util.Map;
 import java.util.HashMap;
 
