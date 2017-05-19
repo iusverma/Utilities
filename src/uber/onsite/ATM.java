@@ -1,3 +1,4 @@
+package uber.onsite;
 /* This class provides an basic implementation for ATM, it has a functionality
  * to store some bills in different currency denomination e.g. 100$, 50$. 
  * When user requests an amount, requested amount is dispersed using all bills

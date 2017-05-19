@@ -1,4 +1,4 @@
-package uber.round1;
+package online.practice;
 
 public class JavaNegativeNumber {
     public static void main(String args[]){

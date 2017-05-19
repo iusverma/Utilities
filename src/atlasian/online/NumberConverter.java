@@ -1,8 +1,8 @@
 /**
- * Just change the map for any number system
+ Just change the map for any number system
  * add or remove entries if needed.
  */
-//package atlassian.online;
+package atlasian.online;
 
 import java.util.HashMap;
 
