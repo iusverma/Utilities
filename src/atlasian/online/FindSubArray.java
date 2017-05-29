@@ -3,6 +3,7 @@ package atlasian.online;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class FindSubArray {
 
@@ -23,14 +24,30 @@ public class FindSubArray {
     }
     
     public static void main(String args[]){
-        int arr [] = {10,4,6,67,89,4};
-        int sarr1 [] = {6,67};
-        int sarr2 [] = {10};
-        int sarr3 [] = {67,89,4};
-        int sarr4 [] = {4,4};
-        System.out.println(findArray(arr, sarr1));
-        System.out.println(findArray(arr, sarr2));
-        System.out.println(findArray(arr, sarr3));
-        System.out.println(findArray(arr, sarr4));
+         ArrayList<String> list1 = new ArrayList<>();
+         ArrayList<String> list2 = new ArrayList<>();
+         Scanner stdin = new Scanner(System.in);
+         int count = 0;
+         while(stdin.hasNextLine())
+         {
+             int list1Size = 0;
+             int list2Size = 0;
+             if(count == 0){
+                 list1Size = Integer.parseInt(stdin.nextLine());
+             }
+             for(int i=0;i<list1Size;i++){
+                 list1.add(stdin.nextLine());
+             }
+             if(count == list1Size+1){
+                 list2Size = Integer.parseInt(stdin.nextLine());
+             }
+             for(int i=0;i<list2Size;i++){
+                 list2.add(stdin.nextLine());
+             }
+             count++;
+         }
+         System.out.println(list1.toString() + ":" +list2.toString()); 
+         System.out.println(Collections.indexOfSubList(list1,list2));
     }
+    
 }
