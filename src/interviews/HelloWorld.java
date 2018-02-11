@@ -1,4 +1,4 @@
-package temp;
+package interviews;
 
 public class HelloWorld {
 	public static void main(String args[]){

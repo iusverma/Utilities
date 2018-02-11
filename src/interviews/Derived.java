@@ -1,4 +1,4 @@
-package temp;
+package interviews;
 
 public class Derived extends Base{
         public int x = 25;

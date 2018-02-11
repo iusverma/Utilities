@@ -1,4 +1,4 @@
-package temp;
+package interviews;
 
 //import java.lang.String;
 import java.util.Scanner;

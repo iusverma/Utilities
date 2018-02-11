@@ -1,4 +1,4 @@
-package temp;
+package interviews;
 
 public class LISTest {
 	private static String lis = "";
