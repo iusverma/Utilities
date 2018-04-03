@@ -48,16 +48,14 @@ public class RoboArm {
 				System.out.print(arr[i]);
 			} else if (arr[i] < 11) {
 				System.out.print('A');
-			} else if (arr[i] < 10) {
+			} else if (arr[i] < 12) {
 				System.out.print('B');
-			} else if (arr[i] < 10) {
+			} else if (arr[i] < 13) {
 				System.out.print('C');
-			} else if (arr[i] < 10) {
+			} else if (arr[i] < 14) {
 				System.out.print('D');
-			} else if (arr[i] < 10) {
+			} else if (arr[i] < 15) {
 				System.out.print('E');
-			} else if (arr[i] < 10) {
-				System.out.print('F');
 			}
 		}
 		scan.close();
