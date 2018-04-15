@@ -1,4 +1,4 @@
-package atlasian.online;
+package com.atlasian.online;
 
 import java.util.Scanner;
 

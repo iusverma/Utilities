@@ -2,7 +2,7 @@
  Just change the map for any number system
  * add or remove entries if needed.
  */
-package atlasian.online;
+package com.atlasian.online;
 
 import java.util.HashMap;
 
