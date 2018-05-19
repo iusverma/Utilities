@@ -7,23 +7,26 @@ package com.hackerran.viator;
  * Absolute sum = 17
  */
 public class SumOfPrime {
-		static int largest = 1;
-		static int largestPrime = 1;
-	    static int sumOfLargePrimeFactor(int n)
-	    {
-	    		// for time saving we could start from n -> 1 in this problem
-	    		for(int i=1;i<=n;i++) {
-	    			System.out.println("num-"+i);
-	    			if(isPrime(i)) {
-	    				int sum = getAbsSum(i);
-	    				if(sum>=largest)
-	    					largest = i;
-	    			}
-	    		}
-	         
-	        // required sum
-	        return largest;     
-	    }
+	static int largest = 1;
+	static int largestPrime = 1;
+
+	static int calculateLargest(int max) {
+		int largest = 0;
+		int largestPrime = 0;
+		for(int i=2;i<max;i++) {
+		    System.out.println("num-"+i);
+		    if(isPrime(i)) {
+			int sum = getAbsSum(i);
+			if(sum>=largest){
+			    largest = sum;
+			    largestPrime = i;
+			}
+		    }
+		}
+
+		// required sum
+		return largestPrime;     
+    	}
 	    
 	    static int getAbsSum(int n) {
 	    		int sum = 0;
