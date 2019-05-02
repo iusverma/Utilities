@@ -1,4 +1,5 @@
 package daily.practice.impl.misc;
+
 public class TidyNumberTest{
 	public static boolean isTidyNumber(int num){
 		int currentDigit = num;
