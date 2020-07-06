@@ -1,4 +1,4 @@
-package com.hackerran.viator;
+package com.hackerrank.viator;
 
 import java.util.HashSet;
 import java.util.Set;
